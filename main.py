@@ -53,30 +53,7 @@ def main():
 	CW(200,10)
 	forward(200, 500)
 	
-            
-            
-            
-
-	#KIPR.set_servo_position(ARM, ARM_BOTGUY)
-	#KIPR.msleep(1000)
-	#print "Performing computations.."
-	#CW(100,87)
-	#backward(100,400)
-	#KIPR.msleep(300)
-	#print "now going to black line"
-	#backward_to_black(200)
-	#KIPR.msleep(500)
-	#CW(100,81)
-	#forward(100,500)
-	#KIPR.msleep(1000)
-	#KIPR.set_servo_position(CLAW,CLAW_CLOSED)
-	#KIPR.msleep(1000)
-	#CW(100,110)  #TURN TO LAZY SUSAN
-	#forward(150,250)
-	#KIPR.msleep(1000)
-	#KIPR.set_servo_position(CLAW,CLAW_OPEN)
-	#KIPR.msleep(1000)
-	#CCW(100,90)
+         
 	KIPR.create_disconnect();
 if __name__== "__main__":
     sys.stdout = os.fdopen(sys.stdout.fileno(),"w",0)

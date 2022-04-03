@@ -1,4 +1,9 @@
 #!/usr/bin/python
+
+#FILENAME: effectors.py
+#PURPOSE:  All functions to move arms and claws
+
+
 import os, sys
 import ctypes
 from constants import *
