@@ -1,4 +1,8 @@
 #!/usr/bin/python
+
+#FILENAME: movement.py
+#PURPOSE:  holds all of our movement functions
+
 import os, sys
 import ctypes
 from constants import *
@@ -6,8 +10,6 @@ KIPR=ctypes.CDLL("/usr/lib/libkipr.so")
 from motion import *
 from effectors import *
 from constants import *
-
-#Created Wednesday, February 6th, 2019. Creators: Kade Little, Soham Kinkhbwala, and Aditya Patra.
 
 #Function: backward
 #Description: move backward at a certain speed a certain distance
