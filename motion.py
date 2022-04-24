@@ -22,7 +22,8 @@ def backward(speed, mm):
 	KIPR.set_create_distance(0);
 	KIPR.create_drive_straight(speed);
 	while(KIPR.get_create_distance() < mm):
-		pass
+		#pass
+		KIPR.msleep(25)
   	KIPR.create_drive_straight(0)
 
 #Function: forward
@@ -36,7 +37,8 @@ def forward(speed, mm):
 	KIPR.set_create_distance(0)
 	KIPR.create_drive_direct(-speed, -speed)
 	while(KIPR.get_create_distance() > -mm):
-		pass
+		#pass
+		KIPR.msleep(25)
  	KIPR.create_drive_straight(0)
 
 def CW(speed, angle):
@@ -44,7 +46,8 @@ def CW(speed, angle):
 	KIPR.set_create_total_angle(0)
 	KIPR.create_spin_CW(speed)
 	while(KIPR.get_create_total_angle() >= -angle):
-		pass
+		#pass
+		KIPR.msleep(25)
  	KIPR.create_spin_CW(0)
         
 def CCW(speed, angle):
@@ -52,7 +55,8 @@ def CCW(speed, angle):
 	KIPR.set_create_total_angle(0)
 	KIPR.create_spin_CCW(speed)
 	while(KIPR.get_create_total_angle() < angle):
-		pass
+		#pass
+		KIPR.msleep(25)
 	KIPR.create_spin_CCW(0)
 	
 def backward_to_black(speed):
